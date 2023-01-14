@@ -127,10 +127,10 @@ export default {
         }
       ],
       text1: ["Back-End Developer", "Web Developer", "DevOps Engineer", "Front-End Developer", "Entrepreneur", "Freelancer"],
-      leftImage: "https://i.imgur.com/8C46TIw.png",
-      rightImage: "https://i.imgur.com/dID7S9t.png",
-      leftImage2: "https://i.imgur.com/hTsENHR.png",
-      rightImage2: "https://i.imgur.com/wiAhH9q.png",
+      leftImage: require("../assets/left1.png"),
+      rightImage: require("../assets/right1.png"),
+      leftImage2: require("../assets/left2.png"),
+      rightImage2: require("../assets/right2.png"),
       sliderLine: 0,
       hSize: 0,
       sliderPosition: 0.5
