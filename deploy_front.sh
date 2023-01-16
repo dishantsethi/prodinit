@@ -14,5 +14,7 @@ echo 'prodinit.com' > CNAME
 
 git add .
 git commit -m "Deployment $(date)"
-git push -f git@github.com:dishantsethi/prodinit.git master:gh-pages
+git push -f origin gh-pages
+
+git checkout master
 
