@@ -18,4 +18,5 @@ git commit -m "Deployment $(date)"
 git push -f origin gh-pages
 
 git checkout master
+cd prod_front
 npm install
