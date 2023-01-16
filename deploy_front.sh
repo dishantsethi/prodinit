@@ -2,14 +2,17 @@
 
 set -e
 
-cd prod_front/
+git checkout gh-pages
+git reset --hard origin/master
 
-npm run build
+rm -rf prod_back terraform deploy_front.sh README.md 
+cd prod_front/dist 
+mv ./* ../..
+cd ../..  
+rm -rf prod_front 
+echo 'prodinit.com' > CNAME
 
-cd dist
-
-git add . -f
+git add .
 git commit -m "Deployment $(date)"
 git push -f git@github.com:dishantsethi/prodinit.git master:gh-pages
 
-# echo 'www.prodinit.com' > CNAME
