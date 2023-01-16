@@ -11,7 +11,7 @@ mv ./* ../..
 cd ../..  
 rm -rf prod_front 
 
-echo 'prodinit.com' > CNAME
+echo 'www.prodinit.com' > CNAME
 
 git add .
 git commit -m "Deployment $(date)"
