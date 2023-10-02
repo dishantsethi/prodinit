@@ -8,6 +8,7 @@ git reset --hard origin/master
 rm -rf prod_back terraform deploy_front.sh README.md prod_front
 cp ./frontend/index.html ./
 cp ./frontend/PRODINIT.png ./
+mkdir assets
 mkdir assets/css
 mkdir assets/js
 mkdir assets/images
