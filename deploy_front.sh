@@ -14,10 +14,12 @@ mkdir assets
 mkdir assets/css
 mkdir assets/js
 mkdir assets/images
+mkdir pages
 
 cp ./frontend/assets/css/* ./assets/css/
 cp ./frontend/assets/js/* ./assets/js/
 cp ./frontend/assets/images/* ./assets/images/
+cp ./frontend/pages/* ./pages/
 
 rm -rf frontend 
 
