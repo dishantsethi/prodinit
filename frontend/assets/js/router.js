@@ -9,8 +9,8 @@ const route = (event) => {
 const routes = {
     404: "/pages/404.html",
     "/careers": "/pages/careers.html",
-    "/privacy-policy": "/pages/privacy.html",
-    "/terms-and-conditions": "/pages/tnc.html",
+    "/privacy-policy": "/pages/privacy-policy.html",
+    "/terms-and-conditions": "/pages/terms-and-conditions.html",
 }
 
 const handleLocation = async () => {
