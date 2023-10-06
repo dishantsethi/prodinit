@@ -9,16 +9,16 @@ const route = (event) => {
 const routes = {
     404: "/pages/404.html",
     "/careers": "/pages/careers.html",
+    "/privacy-policy": "/pages/privacy.html",
+    "/terms-and-conditions": "/pages/tnc.html",
 }
 
 const handleLocation = async () => {
     const path = window.location.pathname
-    console.log(path)
     const route = routes[path] || routes[404]
-    console.log(route)
     const html = await fetch(route).then((data) => data.text());
     document.getElementById("main-page").innerHTML = html
-    scroll(0, 0)
+    scroll(500, 500)
 };
 
 window.route = route
